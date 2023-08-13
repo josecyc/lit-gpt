@@ -60,7 +60,7 @@ def prepare(
         max_seq_length = config["block_size"]
 
     destination_path.mkdir(parents=True, exist_ok=True)
-    print("Loading codebase...")
+    print("Loading codebase...", root_dir)
     data = load_codebase(root_dir)
     data_items = list(data.items())
 
